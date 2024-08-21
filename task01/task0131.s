@@ -4,18 +4,16 @@
 _start:
     la s0, list
     la s1, last
-    li t0, zero # counter
+    li a0, 0 # counter
 
-    lw t2, 0(s1)
+
  
 loop:
-    lw t1, 0(s0)      # Lade das aktuelle Element in t1
-    addi t0, t0, 1    # Erhöhe den Zähler um 1
-    addi s0, s0, 4    # Gehe zum nächsten Element in der Liste
-    bne t1, t2, loop  # Solange t1 (aktuelles Element) ungleich t2 (letztes Element) ist, wiederhole die Schleife
-
+    beq s0, s1, end
+    addi a0, a0, 1
+    addi s0, s0, 4
+    j loop
 end:
-    add a0, t0, zero
     li a7, 93         # Exit-Systemaufruf
     ecall             # Beende das Programm
 
