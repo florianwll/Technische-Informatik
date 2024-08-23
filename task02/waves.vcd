@@ -1,0 +1,70 @@
+$date
+	Wed Aug 21 20:55:26 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module testbench $end
+$var wire 32 ! fib [31:0] $end
+$var reg 32 " n [31:0] $end
+$scope module fibonacci_instance $end
+$var wire 32 # n [31:0] $end
+$var reg 32 $ fib [31:0] $end
+$var reg 32 % fib_prev1 [31:0] $end
+$var reg 32 & fib_prev2 [31:0] $end
+$var integer 32 ' i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx '
+bx &
+bx %
+b1 $
+b0 #
+b0 "
+b1 !
+$end
+#10000
+b1 "
+b1 #
+#20000
+b10 !
+b10 $
+b11 '
+b1 &
+b10 %
+b10 "
+b10 #
+#30000
+b110111 &
+b1011001 !
+b1011001 $
+b1011 '
+b1011001 %
+b1010 "
+b1010 #
+#40000
+b1111011011 !
+b1111011011 $
+b10000 '
+b1001100010 &
+b1111011011 %
+b1111 "
+b1111 #
+#50000
+b10101011000010 !
+b10101011000010 $
+b10101 '
+b1101001101101 &
+b10101011000010 %
+b10100 "
+b10100 #
+#60000
