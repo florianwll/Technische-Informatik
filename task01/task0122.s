@@ -8,7 +8,7 @@ _start:
     slt t2, t0, t1
     beq t2, zero, a_greater_than_b
 
-    sub t3, t1, t0
+    sub t3, t0, t1
     j end_if
 
 a_greater_than_b:
